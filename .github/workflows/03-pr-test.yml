@@ -1,11 +1,10 @@
 name: New PR trigger test
-on:
-  pull_request:
+on: [push, pull_request]
 
 jobs:
   run_on_pr_create:
     runs-on: ubuntu-latest
     steps:
-    - name: Run code on pull request creation
-      run: |
-        echo "Will add code checks here in the next challenge"
+      - name: Run code on pull request creation
+        run: |
+          echo "Will add code checks here in the next challenge"
