@@ -20,6 +20,7 @@ def main(args):
 
     # split data
     X_train, X_test, y_train, y_test = split_data(df)
+    
 
     # train model
     train_model(args.reg_rate, X_train, X_test, y_train, y_test)
